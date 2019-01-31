@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <link rel="stylesheet" href="css/bundle.css">
+    <script src="js/bundle.js"></script>
+    <title>PON CAFE</title>
+  </head>
+  <body>
+    <header class="header">
+      <p class="header__logo">PON CAFE</p>
+      <nav class="header__nav">
+        <ul>
+          <li>HOME</li>
+          <li>NEWS</li>
+          <li>MENU</li>
+          <li>ACCESS</li>
+          <li>CONTACT</li>
+        </ul>
+      </nav>
+    </header>
+    
+    <div class="hero section">
+      <div class="hero__wrapper animated zoomIn">
+        <p class="hero__catch">COME ONE<br>DRINK ALL</p>
+        <div class="hero__desc">
+          <p>PON CAFE is the place where you can get flavorful coffee strains from global elite brands and roasters at very affordable price.</p>
+        </div>
+        <p class="hero__moreBtn"></p>
+      </div>
+    </div>
+
+    <div class="news section">
+      <div class="section__wrapper">
+        <h2>NEWS</h2>
+        <ul>
+          <li>
+            <div class="news__head" href="#toggle-animation--1" uk-toggle="target: #toggle-animation--1; animation: uk-animation-fade">
+              <p class="news__title">新年明けましておめでとうございます。</p>
+              <p class="news__date">2019/01/04</p>
+            </div>
+            <div id="toggle-animation--1" class="news__body" class="uk-card uk-card-default uk-card-body uk-margin-small" hidden>
+              新年明けましておめでとうございます。<br>
+              <br>
+              今年も元気に営業していきます！<br>
+              どうぞよろしくお願い致します。
+            </div>
+          </li>
+          <li>
+            <div class="news__head" href="#toggle-animation--2" uk-toggle="target: #toggle-animation--2; animation: uk-animation-fade">
+              <p class="news__title">年末年始の営業について</p>
+              <p class="news__date">2018/12/27</p>
+            </div>
+            <div id="toggle-animation--2" class="news__body" class="uk-card uk-card-default uk-card-body uk-margin-small" hidden>
+              12/28(木) ~ 01/03(木)まではお休みとさせて頂きます。<br>
+              ご迷惑をお掛けしますが、よろしくお願い致します。
+            </div>
+          </li>
+          <li>
+              <div class="news__head" href="#toggle-animation--3" uk-toggle="target: #toggle-animation--3; animation: uk-animation-fade">
+                <p class="news__title">モモンガ太郎が当店にスタッフとして加わりました。</p>
+                <p class="news__date">2018/12/10</p>
+              </div>
+              <div id="toggle-animation--3" class="news__body" class="uk-card uk-card-default uk-card-body uk-margin-small" hidden>
+                皆様、当店の新しいスタッフとして「モモンガ太郎」が新たに加わりました。<br>
+                精一杯やっていくそうなのでどうぞよろしくお願い致します。
+              </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="drinkMenu section">
+      <div class="section__wrapper">
+        <h2 class="animated" data-scroll="once toggle(.fadeInDown, .invisible) addHeight">DRINK MENU</h2>
+
+        <div uk-slider="center: true">
+
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+        
+                <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                    <li>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/menu_orange.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Headline</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/menu_biji.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Headline</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/menu_kish.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Headline</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/menu_lemon.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Headline</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+        
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+            </div>
+        
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+        
+        </div>
+      </div>  
+    </div>
+
+    <div class="foodMenu section">
+        <div class="section__wrapper">
+          <h2 class="animated" data-scroll="once toggle(.fadeInDown, .invisible) addHeight">FOOD MENU</h2>
+  
+          <div uk-slider="center: true">
+  
+              <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+          
+                  <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                      <li>
+                          <div class="uk-card uk-card-default">
+                              <div class="uk-card-media-top">
+                                  <img src="images/menu_orange.jpg" alt="">
+                              </div>
+                              <div class="uk-card-body">
+                                  <h3 class="uk-card-title">Headline</h3>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                              </div>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="uk-card uk-card-default">
+                              <div class="uk-card-media-top">
+                                  <img src="images/menu_biji.jpg" alt="">
+                              </div>
+                              <div class="uk-card-body">
+                                  <h3 class="uk-card-title">Headline</h3>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                              </div>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="uk-card uk-card-default">
+                              <div class="uk-card-media-top">
+                                  <img src="images/menu_kish.jpg" alt="">
+                              </div>
+                              <div class="uk-card-body">
+                                  <h3 class="uk-card-title">Headline</h3>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                              </div>
+                          </div>
+                      </li>
+                      <li>
+                          <div class="uk-card uk-card-default">
+                              <div class="uk-card-media-top">
+                                  <img src="images/menu_lemon.jpg" alt="">
+                              </div>
+                              <div class="uk-card-body">
+                                  <h3 class="uk-card-title">Headline</h3>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                              </div>
+                          </div>
+                      </li>
+                  </ul>
+          
+                  <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                  <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+          
+              </div>
+          
+              <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+          
+          </div>
+        </div>  
+      </div>
+
+    <div class="access section">
+      <div class="section__wrapper">
+        <h2 class="animated" data-scroll="once toggle(.fadeInDown, .invisible) addHeight">ACCESS</h2>
+        <dl>
+          <dt><i class="uk-icon" uk-icon="location"></i>Address</dt>
+          <dd>福岡県飯塚市馬敷1283-41</dd>
+
+          <dt><i class="uk-icon" uk-icon="phone"></i>Tel</dt>
+          <dd>092-9321-1932</dd>
+
+          <dt><i class="uk-icon" uk-icon="check"></i>Parking</dt>
+          <dd>約6台分のスペースがあります。</dd>
+        </dl>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26596.3964041857!2d130.59099141865184!3d33.56507801742758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354182f16900260f%3A0x79ab441bda213238!2z44CSODIwLTA3MDkg56aP5bKh55yM6aOv5aGa5biC6aas5pW3!5e0!3m2!1sja!2sjp!4v1548910834199" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>  
+    </div>
+
+    <div class="contact section">
+      <div class="section__wrapper">
+        <h2 class="animated" data-scroll="once toggle(.fadeInDown, .invisible) addHeight">CONTACT</h2>
+        <form>
+            <fieldset class="uk-fieldset">
+        
+                <div class="uk-margin">
+                    <input class="uk-input" type="text" placeholder="Input">
+                </div>
+        
+                <div class="uk-margin">
+                    <select class="uk-select">
+                        <option>Option 01</option>
+                        <option>Option 02</option>
+                    </select>
+                </div>
+        
+                <div class="uk-margin">
+                    <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+                </div>
+
+                <button class="uk-button uk-button-primary">CONTACT</button>
+        
+            </fieldset>
+        </form>
+      </div> 
+    </div>
+
+    <footer>
+      <div class="footer__columns">
+        <h3>Pages</h3>
+        <div class="footer__lists">
+          <ul>
+            <li>HOME</li>
+            <li>NEWS</li>
+            <li>MENU</li>
+          </ul>
+          <ul>
+            <li>ACCESS</li>
+            <li>CONTACT</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__columns">
+        <h3>Description</h3>
+        <div>
+            <p>Coffee Shop is a cosy place where friends meet to share coffee,</p>
+            <p>cakes and light meals. At night,</p>
+            <p>it is transformed into a vibey eatery.</p>
+        </div>
+      </div>
+      <div class="footer__columns">
+        <h3>Follow Us</h3>
+        <ul class="footer__sns">
+            <li><a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a></li>
+            <li><a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a></li>
+            <li><a href="" class="uk-icon-button" uk-icon="google-plus"></a></li>
+        </ul>
+      </div>
+    </footer>
+
+  </body>
+</html>
+
