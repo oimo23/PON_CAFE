@@ -66,43 +66,6 @@ header .header__nav ul li {
     font-size: 1.3rem;
 }
 
-.hero {
-    background: url(./images/hero.jpg) top right;
-    height: 700px;
-    display: flex;
-    background-size: 1000px auto;
-    background-repeat: no-repeat;
-    width: 1100px;
-    margin: 60px auto 0 auto;
-    max-width: 100%;
-    align-items: center;
-}
-
-.hero .hero__wrapper {
-    max-width: 100%;
-    width: 1100px;
-    padding-left: 20px;
-}
-
-.hero .hero__catch {
-    display: inline-block;
-    padding: 10px;
-    font-size: 6rem;
-    font-weight: bold;
-    line-height: 1.1;
-    color: #fff;
-    background: rgba(0,0,0,0.4);
-}
-
-.hero .hero__desc {
-    color: #fff;
-    width: 450px;
-    padding: 10px;
-    line-height: 1.8;
-    font-size: 0.8rem;
-    background: rgba(0,0,0,0.4);
-}
-
 .section {
     padding: 80px 0;
     display: flex;
@@ -116,6 +79,75 @@ header .header__nav ul li {
 .section .section__wrapper {
     max-width: 1100px;
     padding: 0 20px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero .hero__texts {
+    position: relative;
+}
+
+.hero .hero__sub {
+    color: #7A6E30;
+    font-size : 1.4rem;
+}
+
+.hero .hero__img {
+    background: url(../images/hero.jpg) top right;
+    background-position: top left;
+    width: 75vw;
+    height: calc(100vh - 153px);
+    min-height: 600px;
+}
+
+.hero .hero__catch {
+    display: inline-block;
+    padding: 0;
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 1.1;
+    color: #7A6E30;
+    /*background: rgba(0,0,0,0.4);*/
+}
+
+.hero .origin {
+    width: 19vw;
+    overflow: hidden;
+    position: absolute;
+    top: 30%;
+    z-index: 999;
+    left: 5vw;
+}
+
+.hero .origin .hero__desc {
+    color: #000;
+}
+
+.hero .hero__desc {
+    color: #fff;
+    width: 450px;
+    padding: 10px;
+    line-height: 1.8;
+    font-size: 0.8rem;
+    /*background: rgba(0,0,0,0.4);*/
+}
+
+.hero .duplicated {
+    position: absolute;
+    color: #fff;
+    top: 30%;
+    left: 5vw;
+}
+
+.hero .duplicated .hero__sub {
+    color: #fff;
+}
+
+.hero .duplicated .hero__catch {
+    color: #fff;
 }
 
 .news .news__head {
