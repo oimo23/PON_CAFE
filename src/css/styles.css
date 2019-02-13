@@ -203,7 +203,27 @@ footer .footer__desc {
     width : 500px;
 }
 
+.concept {
+    display: none;
+}
+
+.only_pc {
+    display: block;
+}
+
+.only_sp {
+    display: none;
+}
+
 @media screen and (max-width:640px) {
+    .only_pc {
+        display: none;
+    }
+    
+    .only_sp {
+        display: block;
+    }
+
     body {
         font-size: 14px;
     }
@@ -213,6 +233,10 @@ footer .footer__desc {
     li,
     input {
         max-width: 100%;
+    }
+
+    .concept {
+        display: block;
     }
 
     .section {
@@ -241,6 +265,10 @@ footer .footer__desc {
     .hero {
         max-height: 100vh;
         margin: 0 auto;
+        height: 300px;
+        width: 100%;
+        background-size: cover;
+        background-position: 100px 0;
     }
 
     .hero .hero__catch {
@@ -249,6 +277,11 @@ footer .footer__desc {
 
     .hero .hero__wrapper {
         padding: 0 10px;
+        text-align: left;
+    }
+
+    .hero .hero__desc {
+        display: none;
     }
 
     .news .news__head {
