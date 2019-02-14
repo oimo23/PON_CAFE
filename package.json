@@ -2,19 +2,23 @@
   "scripts": {
     "dev": "webpack-dev-server --mode=development",
     "build": "webpack --mode=production",
-    "format": "prettier --write src/*.js"
+    "format": "prettier --write src/*.js",
+    "lint": "eslint src/main.js"
   },
   "prettier": {
     "singleQuote": true,
     "semi": false
   },
-  "dependencies": {},
+  "dependencies": {
+    "mini-css-extract-plugin": "^0.5.0"
+  },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.0",
+    "eslint": "^5.13.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^3.0.1",
     "image-webpack-loader": "^4.6.0",

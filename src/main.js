@@ -1,5 +1,5 @@
 import './css/ress.css'
-import './css/styles.css'
+import './css/styles.scss'
 
 import ScrollTrigger from './js/scrollTrigger.js'
 
