@@ -3,6 +3,6 @@
         "sourceType": "module"
     },
     "rules": {
-        "semi": "warn"
+    
     }
 }

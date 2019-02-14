@@ -98,9 +98,9 @@ header .header__nav ul li {
 .hero .hero__img {
     background: url(../images/hero.jpg) top right;
     background-position: top left;
-    width: 75vw;
+    width: 76vw;
     height: calc(100vh - 153px);
-    min-height: 600px;
+    min-height: 300px;
 }
 
 .hero .hero__catch {
@@ -117,7 +117,8 @@ header .header__nav ul li {
     width: 19vw;
     overflow: hidden;
     position: absolute;
-    top: 30%;
+    top: 50%;
+    transform: translate(0%, -50%);
     z-index: 999;
     left: 5vw;
 }
@@ -128,7 +129,7 @@ header .header__nav ul li {
 
 .hero .hero__desc {
     color: #fff;
-    width: 450px;
+    width: 550px;
     padding: 10px;
     line-height: 1.8;
     font-size: 0.8rem;
@@ -138,7 +139,8 @@ header .header__nav ul li {
 .hero .duplicated {
     position: absolute;
     color: #fff;
-    top: 30%;
+    top: 50%;
+    transform: translate(0%, -50%);
     left: 5vw;
 }
 
@@ -290,16 +292,6 @@ footer .footer__desc {
 
     .hero .hero__img {
         background-position: 1367px -240px;
-    }
-
-    .hero .hero__img:before {
-        content: '';
-        background: rgba(0,0,0,0.3);
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        width: 100%;
-        height: calc(100% - 73px);
     }
 
     .hero .hero__desc {
