@@ -269,8 +269,8 @@ header .header__nav ul li {
 .hero .hero__img {
   background: url(../images/hero.jpg) top right;
   background-position: top left;
-  width: 75vw;
-  height: calc(100vh - 153px);
+  width: calc(76vw - (100vw - 100%));
+  height: calc(100vh - 63px);
   min-height: 300px; }
 
 .hero .hero__catch {
@@ -279,8 +279,7 @@ header .header__nav ul li {
   font-size: 6rem;
   font-weight: bold;
   line-height: 1.1;
-  color: #7A6E30;
-  /*background: rgba(0,0,0,0.4);*/ }
+  color: #7A6E30; }
 
 .hero .origin {
   width: 19vw;
