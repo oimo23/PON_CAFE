@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="shortcut icon" href="images/favicon.ico" /> 
 
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
@@ -12,37 +14,69 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
-    <link rel="stylesheet" href="css/bundle.css">
     <script src="js/bundle.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>PON CAFE</title>
   </head>
   <body>
+    <p id="home"></p>
     <header class="header">
-      <p class="header__logo">PON CAFE</p>
+      <p class="header__logo"><a href="#home">PON CAFE</a></p>
       <nav class="header__nav">
         <ul>
-          <li>HOME</li>
-          <li>NEWS</li>
-          <li>MENU</li>
-          <li>ACCESS</li>
-          <li>CONTACT</li>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#news">NEWS</a></li>
+          <li><a href="#drinkMenu">DRINK</a></li>
+          <li><a href="#foodMenu">FOOD</a></li>
+          <li><a href="#access">ACCESS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
     </header>
     
     <div class="hero section">
-      <div class="hero__wrapper animated zoomIn">
-        <p class="hero__catch">COME ONE<br>DRINK ALL</p>
-        <div class="hero__desc">
-          <p>PON CAFE is the place where you can get flavorful coffee strains from global elite brands and roasters at very affordable price.</p>
+        <div class="hero__texts">
+        <div class="hero__wrapper origin">
+            <p class="hero__sub">LOLEMORGANIC</p>
+            <p class="hero__catch">COMEONE<br>DRINKALL</p>
+            <div class="hero__desc">
+                <p>PON CAFEは、福岡市にある居心地良いカフェです。</p>
+                <p>都会の喧騒から離れた隠れ家で、リラックスできるひと時をお過ごしください...。</p>
+            </div>
+            <p class="hero__moreBtn"></p>
         </div>
-        <p class="hero__moreBtn"></p>
-      </div>
+        <div class="hero__wrapper duplicated">
+                <p class="hero__sub">LOLEMORGANIC</p>
+            <p class="hero__catch">COMEONE<br>DRINKALL</p>
+            <div class="hero__desc">
+                <p>PON CAFEは、福岡市にある居心地良いカフェです。</p>
+                <p>都会の喧騒から離れた隠れ家で、リラックスできるひと時をお過ごしください...。</p>
+            </div>
+            <p class="hero__moreBtn"></p>
+        </div>
+        </div>
+        <div class="hero__img">
+
+        </div>
     </div>
 
-    <div class="news section">
+    <!--
+    <div class="concept section">
+        <div class="section__wrapper">
+            <h2 class="animated fadeInDown">CONCEPT</h2>
+            <div class="concept__desc">
+                <p>PON CAFEは、福岡市にある居心地良いカフェです。</p>
+                <p>本場イタリアのジロポン地方で修行したクレーピエが作るガレットやクレープは人気の定番メニューです。</p>
+                <p>それだけでなく、こだわりのケーキや季節のデザート、お料理も頂けます。都会の喧騒から離れた隠れ家で、リラックスできるひと時をお過ごしください...。</p>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <div class="news section" id="news">
       <div class="section__wrapper">
-        <h2>NEWS</h2>
+        <h2 class="animated fadeInDown only_pc">NEWS</h2>
+        <h2 class="animated fadeInDown only_sp"  data-scroll="once toggle(.fadeInDown, .invisible) addHeight">NEWS</h2>
         <ul>
           <li>
             <div class="news__head" href="#toggle-animation--1" uk-toggle="target: #toggle-animation--1; animation: uk-animation-fade">
@@ -68,11 +102,11 @@
           </li>
           <li>
               <div class="news__head" href="#toggle-animation--3" uk-toggle="target: #toggle-animation--3; animation: uk-animation-fade">
-                <p class="news__title">モモンガ太郎が当店にスタッフとして加わりました。</p>
+                <p class="news__title">モモンガが当店にスタッフとして加わりました。</p>
                 <p class="news__date">2018/12/10</p>
               </div>
               <div id="toggle-animation--3" class="news__body" class="uk-card uk-card-default uk-card-body uk-margin-small" hidden>
-                皆様、当店の新しいスタッフとして「モモンガ太郎」が新たに加わりました。<br>
+                皆様、当店の新しいスタッフとして「モモンガ」が新たに加わりました。<br>
                 精一杯やっていくそうなのでどうぞよろしくお願い致します。
               </div>
             </li>
@@ -80,7 +114,7 @@
       </div>
     </div>
 
-    <div class="drinkMenu section">
+    <div class="drinkMenu section" id="drinkMenu">
       <div class="section__wrapper">
         <h2 class="animated" data-scroll="once toggle(.fadeInDown, .invisible) addHeight">DRINK MENU</h2>
 
@@ -95,8 +129,9 @@
                                 <img src="images/menu_orange.jpg" alt="">
                             </div>
                             <div class="uk-card-body">
-                                <h3 class="uk-card-title">Headline</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                <h3 class="uk-card-title">Orange Mix</h3>
+                                <p class="drinkMenu__price">380yen</p>
+                                <p>当店人気No.1の特産のみかんを使用した、果汁たっぷりのオレンジジュースです。</p>
                             </div>
                         </div>
                     </li>
@@ -106,19 +141,9 @@
                                 <img src="images/menu_biji.jpg" alt="">
                             </div>
                             <div class="uk-card-body">
-                                <h3 class="uk-card-title">Headline</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="uk-card uk-card-default">
-                            <div class="uk-card-media-top">
-                                <img src="images/menu_kish.jpg" alt="">
-                            </div>
-                            <div class="uk-card-body">
-                                <h3 class="uk-card-title">Headline</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                <h3 class="uk-card-title">Biji Tea</h3>
+                                <p class="drinkMenu__price">380yen</p>
+                                <p>ホッと温まることの出来るビジ茶です。濃厚でコクのある味わいに仕上がっています。</p>
                             </div>
                         </div>
                     </li>
@@ -128,8 +153,33 @@
                                 <img src="images/menu_lemon.jpg" alt="">
                             </div>
                             <div class="uk-card-body">
-                                <h3 class="uk-card-title">Headline</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                <h3 class="uk-card-title">Lemonade</h3>
+                                <p class="drinkMenu__price">380yen</p>
+                                <p>レモンにかすかに塩を加えた、心地よいレモネードです。</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/menu_captino.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Captino</h3>
+                                <p class="drinkMenu__price">400yen</p>
+                                <p>ジロポン地方のコーヒー豆を使用した、カプチーノです。苦すぎず女性やお子様にも優しい味です。</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/menu_espresso.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Captino</h3>
+                                <p class="drinkMenu__price">400yen</p>
+                                <p>ジロポン地方のコーヒー豆を使用した、エスプレッソです。苦すぎず女性やお子様にも優しい味です。</p>
                             </div>
                         </div>
                     </li>
@@ -146,7 +196,7 @@
       </div>  
     </div>
 
-    <div class="foodMenu section">
+    <div class="foodMenu section" id="foodMenu">
         <div class="section__wrapper">
           <h2 class="animated" data-scroll="once toggle(.fadeInDown, .invisible) addHeight">FOOD MENU</h2>
   
@@ -158,47 +208,51 @@
                       <li>
                           <div class="uk-card uk-card-default">
                               <div class="uk-card-media-top">
-                                  <img src="images/menu_orange.jpg" alt="">
-                              </div>
-                              <div class="uk-card-body">
-                                  <h3 class="uk-card-title">Headline</h3>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                              </div>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="uk-card uk-card-default">
-                              <div class="uk-card-media-top">
-                                  <img src="images/menu_biji.jpg" alt="">
-                              </div>
-                              <div class="uk-card-body">
-                                  <h3 class="uk-card-title">Headline</h3>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                              </div>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="uk-card uk-card-default">
-                              <div class="uk-card-media-top">
                                   <img src="images/menu_kish.jpg" alt="">
                               </div>
                               <div class="uk-card-body">
-                                  <h3 class="uk-card-title">Headline</h3>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                  <h3 class="uk-card-title">Star Kish</h3>
+                                  <p class="drinkMenu__price">600yen</p>
+                                  <p>卵と生クリームを使って作るフランス、アルザス＝ロレーヌ地方の郷土料理です。</p>
                               </div>
                           </div>
                       </li>
                       <li>
-                          <div class="uk-card uk-card-default">
-                              <div class="uk-card-media-top">
-                                  <img src="images/menu_lemon.jpg" alt="">
-                              </div>
-                              <div class="uk-card-body">
-                                  <h3 class="uk-card-title">Headline</h3>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                              </div>
-                          </div>
-                      </li>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/menu_hotdog.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Hot Dog</h3>
+                                <p class="drinkMenu__price">500yen</p>
+                                <p>自家製のパンにソーセージをサンドしたホットドッグです。</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/menu_orangeJelly.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Orange Jelly</h3>
+                                <p class="drinkMenu__price">450yen</p>
+                                <p>果肉たっぷりプルプルのオレンジゼリーです。</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default">
+                            <div class="uk-card-media-top">
+                                <img src="images/menu_pancake.jpg" alt="">
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Pancake</h3>
+                                <p class="drinkMenu__price">600yen</p>
+                                <p>4段がさねのパンケーキです。</p>
+                            </div>
+                        </div>
+                    </li>
                   </ul>
           
                   <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
@@ -212,7 +266,7 @@
         </div>  
       </div>
 
-    <div class="access section">
+    <div class="access section" id="access">
       <div class="section__wrapper">
         <h2 class="animated" data-scroll="once toggle(.fadeInDown, .invisible) addHeight">ACCESS</h2>
         <dl>
@@ -229,25 +283,25 @@
       </div>  
     </div>
 
-    <div class="contact section">
+    <div class="contact section" id="contact">
       <div class="section__wrapper">
         <h2 class="animated" data-scroll="once toggle(.fadeInDown, .invisible) addHeight">CONTACT</h2>
         <form>
             <fieldset class="uk-fieldset">
         
                 <div class="uk-margin">
-                    <input class="uk-input" type="text" placeholder="Input">
+                    <input class="uk-input" type="text" placeholder="メールアドレス">
                 </div>
         
                 <div class="uk-margin">
                     <select class="uk-select">
-                        <option>Option 01</option>
-                        <option>Option 02</option>
+                        <option>ご予約に関して</option>
+                        <option>その他</option>
                     </select>
                 </div>
         
                 <div class="uk-margin">
-                    <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+                    <textarea class="uk-textarea" rows="5" placeholder="お問い合わせ内容""></textarea>
                 </div>
 
                 <button class="uk-button uk-button-primary">CONTACT</button>
@@ -262,22 +316,24 @@
         <h3>Pages</h3>
         <div class="footer__lists">
           <ul>
-            <li>HOME</li>
-            <li>NEWS</li>
-            <li>MENU</li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#drinkMenu">DRINK</a></li>
+            <li><a href="#foodMenu">FOOD</a></li>
           </ul>
           <ul>
-            <li>ACCESS</li>
-            <li>CONTACT</li>
+            <li><a href="#access">ACCESS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </div>
       </div>
       <div class="footer__columns">
-        <h3>Description</h3>
-        <div>
-            <p>Coffee Shop is a cosy place where friends meet to share coffee,</p>
-            <p>cakes and light meals. At night,</p>
-            <p>it is transformed into a vibey eatery.</p>
+        <h3>Introduction</h3>
+        <div class="footer__desc">
+            <p>PON CAFEは、福岡市飯塚にある居心地良いカフェです。</p>
+            <p>本場イタリアのジロポン地方で修行したクレーピエが作るガレットやクレープは人気の定番メニューです。</p>
+            <p>それだけでなく、こだわりのケーキや季節のデザート、お料理も頂けます。</p>
+            <p>都会の喧騒から離れた隠れ家で、リラックスできるひと時をお過ごしください...。</p>
         </div>
       </div>
       <div class="footer__columns">
