@@ -275,7 +275,7 @@ header .header__nav ul li {
   font-size: 1.4rem; }
 
 .hero .hero__img {
-  background: url(/hero.0f0b5fd4.jpg) top right;
+  background: url(./hero.0f0b5fd4.jpg) top right;
   background-position: top left;
   width: calc(76vw - (100vw - 100%));
   height: 100vh;
