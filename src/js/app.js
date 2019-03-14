@@ -1,10 +1,10 @@
-import './css/ress.css'
-import './css/styles.scss'
+import '../scss/ress.scss';
+import '../scss/style.scss';
 
-import ScrollTrigger from './js/scrollTrigger.js'
+import ScrollTrigger from './modules/scrollTrigger.js'
 
 window.onload = () => {
-  var trigger = new ScrollTrigger()
+  let trigger = new ScrollTrigger()
 
   let headH = document.getElementsByClassName('header').offsetHeight
   document.body.style.marginTop = headH + 'px'
